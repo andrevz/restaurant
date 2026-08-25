@@ -1,0 +1,51 @@
+.login-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px
+}
+
+.form__input input {
+    min-height: 44px;
+    padding: 0 8px;
+    font-size: 16px;
+}
+
+.form__input label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form__submit {
+    min-height: 48px;
+    padding: 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: goldenrod;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.login-header {
+    display: flex;
+    justify-content: center;
+    padding: 16px 16px 0;
+}
+
+.login-header__logo {
+    display: block;
+    max-width: 300px;
+    height: auto;
+}
