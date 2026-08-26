@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <nav class="dashboard-header__nav">
+            <img src="/images/logo.png" alt="Logo de la aplicación">
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <nav class="dashboard-nav">
+            <a href="/pages/groups-dashboard.html" class="dashboard-nav__link dashboard-nav__link--active">Grupos</a>
+            <a href="/pages/products-dashboard.html" class="dashboard-nav__link">Productos</a>
+        </nav>
+        <section class="dashboard-section">
+            <h1 class="dashboard-section__title">Grupos</h1>
+            
+            <button class="dashboard-section__add">+ Nuevo Grupo</button>
+
+            <table class="dashboard-section__table">
+                <colgroup>
+                    <col class="dashboard-section__column--name">
+                    <col class="dashboard-section__column--prices">
+                    <col class="dashboard-section__column--actions">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Precios Configurados</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Experiencia inolvidable</td>
+                        <td>Bs. 32,00 (4 porciones), Bs. 55,00 (6 porciones), Bs. 65,00 (8 porciones), Bs. 80,00 (10 porciones)</td>
+                        <td class="dashboard-section__actions">
+                            <button class="dashboard-section__edit">Editar</button>
+                            <button class="dashboard-section__delete">Borrar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sabores que inspiran</td>
+                        <td>Bs. 30,00 (4 porciones), Bs. 50,00 (6 porciones), Bs. 60,00 (8 porciones), Bs. 75,00 (10 porciones)</td>
+                        <td class="dashboard-section__actions">
+                            <button class="dashboard-section__edit">Editar</button>
+                            <button class="dashboard-section__delete">Borrar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
