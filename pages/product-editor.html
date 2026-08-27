@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Productos</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="product-editor-header">
+        <nav class="product-editor-header__nav">
+            <img src="/images/logo.png" alt="Logo de la aplicación">
+        </nav>
+    </header>
+
+    <main class="product-editor-container">
+        <h1 class="product-editor-container__title">Editar Producto</h1>
+
+        <form class="product-editor-form">
+            <fieldset class="product-editor-form__section product-editor-form__general">
+                <legend class="product-editor-form__legend">Información General</legend>
+
+                <div class="form__input">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" autocomplete="off" autofocus required>
+                </div>
+
+                <div class="form__input">
+                    <label for="description">Descripción:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+
+                <div class="form__input">
+                    <label for="group">Grupo:</label>
+                    <select id="group" name="group" required>
+                        <option value="">Seleccione un grupo</option>
+                        <option value="group1">Experiencia inolvidable</option>
+                        <option value="group2">Sabores que inspiran</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="product-editor-form__section product-editor-form__media">
+                <legend class="product-editor-form__legend">Imagen del Producto</legend>
+
+                <div class="form__input">
+                    <label for="image">Imagen:</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                </div>
+            </fieldset>
+
+            <div class="product-editor-form__actions">
+                <button class="product-editor-form__button product-editor-form__button--submit" type="submit">Guardar</button>
+                <button class="product-editor-form__button product-editor-form__button--cancel" type="button">Cancelar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
