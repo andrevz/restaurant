@@ -4,16 +4,122 @@
     padding: 0;
 }
 
-.login-container {
+.login-container,
+.group-editor-container {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.login-form {
+.login-form,
+.group-editor-form {
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 16px;
+}
+
+.group-editor-form__section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    border: 1px solid #e1e4e6;
+    border-radius: 8px;
+}
+
+.group-editor-form__legend {
+    padding: 0 8px;
+    color: #23282e;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.group-editor-form__header,
+.group-editor-form__row {
+    display: grid;
+    grid-template-columns: minmax(80px, 1fr) minmax(180px, 2fr) minmax(120px, 1.5fr);
+    align-items: center;
+    column-gap: 16px;
+}
+
+.group-editor-form__header {
+    padding: 12px 0;
+    color: #fff;
+    background-color: #23282e;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.group-editor-form__header span {
+    padding: 0 12px;
+}
+
+.group-editor-form__row {
+    min-height: 64px;
+    padding: 8px 0;
+    border-bottom: 1px solid #e1e4e6;
+}
+
+.group-editor-form__row:last-child {
+    border-bottom: 0;
+}
+
+.group-editor-form__row > label,
+.group-editor-form__row > span {
+    font-weight: 600;
+    padding: 0 12px;
+}
+
+.group-editor-form__row .form__input {
+    display: block;
+}
+
+.group-editor-form__row .form__input label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+.group-editor-form__row input {
+    width: 100%;
+}
+
+.group-editor-form__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.group-editor-form__button {
+    min-height: 40px;
+    padding: 0 16px;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.group-editor-form__button--submit {
+    background-color: goldenrod;
+}
+
+.group-editor-form__button--cancel {
+    background-color: #23282e;
+}
+
+.group-editor-form__button--submit:hover,
+.group-editor-form__button--submit:focus-visible {
+    background-color: #b8860b;
+}
+
+.group-editor-form__button--cancel:hover,
+.group-editor-form__button--cancel:focus-visible {
+    background-color: #3a424a;
 }
 
 .form__input {
@@ -57,7 +163,8 @@
 }
 
 .menu-header,
-.dashboard-header {
+.dashboard-header,
+.group-editor-header {
     display: flex;
     justify-content: center;
     height: 72px;
@@ -66,8 +173,14 @@
 }
 
 .menu-header__nav img,
-.dashboard-header__nav img {
+.dashboard-header__nav img,
+.group-editor-header__nav img {
     height: 56px;
+}
+
+.group-editor-container__title {
+    text-align: center;
+    margin-top: 16px;
 }
 
 .menu-container {
